@@ -7,8 +7,16 @@
 
 #include <stdio.h>
 
+int squareNumber(int number)
+{
+    return number * number;
+}
+
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+    int number = 5;
+    int numberSquared = squareNumber(number);
+    
+    printf("\"%d\" squared is \"%d\".\n", number, numberSquared);
+    
     return 0;
 }
